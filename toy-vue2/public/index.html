@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app" aa="sx">
+      <p style="color: red;">HELLO</p>
+      <div>{{ name }} WORLD</div>
+      <div>{{ age }}</div>
+    </div>
+    <script src="../dist/umd/vue.js"></script>
+    <script>
+      let vm = new Vue({
+        el: "#app",
+        data() {
+          return {
+            name: "顺网",
+            age: "14",
+          };
+        },
+      });
+    </script>
+  </body>
+</html>
